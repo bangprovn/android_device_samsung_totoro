@@ -19,6 +19,10 @@ $(call inherit-product, vendor/samsung/totoro/vendor.mk)
 # Add device package overlay
 DEVICE_PACKAGE_OVERLAYS += device/samsung/totoro/overlay
 
+PRODUCT_PACKAGES += \
+	audio.primary \
+    audio_policy \
+    alsa \
 # Add LDPI assets, in addition to MDPI
 PRODUCT_AAPT_PREF_CONFIG := ldpi mdpi
 
